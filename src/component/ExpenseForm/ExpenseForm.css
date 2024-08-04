@@ -1,0 +1,94 @@
+/* General form styling */
+form {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fcfdfe;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 13rem;
+  }
+  
+  /* Form title */
+  .expenseform-tittle h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Form input fields */
+  .expenseform-div {
+    margin-bottom: 15px;
+  }
+  
+  .expenseform-div label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .expenseform-div input[type="date"],
+  .expenseform-div input[type="text"],
+  .expenseform-div input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .expenseform-div input[type="date"]:focus,
+  .expenseform-div input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Submit button */
+  .expenseform-submit {
+    text-align: center;
+  }
+  
+  .expenseform-submit button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* .expenseform-submit button:hover {
+    background-color: #0056b3;
+  } */
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+  
+    .expenseform-tittle h2 {
+      font-size: 1.3em;
+    }
+  
+    .expenseform-div input[type="date"],
+    .expenseform-div input[type="text"] {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    .expenseform-submit button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+/* Container for the parent list */
+.parentlist-div {
+  padding: 20px; /* Space inside the container */
+  margin: 20px auto; /* Center the container with some margin */
+  background-color: #eef0ee; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #e0e0e0; /* Light grey border */
+  max-width: 700px; /* Maximum width for the container */
+  width: 100%; /* Ensure full width within the max-width constraint */
+  max-height: 400px; /* Set a maximum height for the div */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Title styling */
+.parentlist-div h3 {
+  font-size: 24px; /* Font size for the heading */
+  color: #1b0202; /* Dark red color for the text */
+  margin: 0 0 20px 0; /* Margin: top 0, bottom 20px */
+  text-align: center; /* Center the title */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .parentlist-div {
+    padding: 15px; /* Adjust padding for smaller screens */
+    max-width: 90%; /* Allow the container to use more width on smaller screens */
+  }
+
+  .parentlist-div h3 {
+    font-size: 20px; /* Slightly smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .parentlist-div {
+    padding: 10px; /* Further adjust padding for very small screens */
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .parentlist-div h3 {
+    font-size: 18px; /* Further reduce font size for very small screens */
+  }
+}

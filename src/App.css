@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Container for the entire app */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    min-height: 70vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Main title styling */
+  .main h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Container for the app's content */
+  .app {
+    display: flex;
+    flex-direction: row; /* Side-by-side layout */
+    width: 100%;
+    max-width: 1200px; /* Increase max width for better spacing */
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 12px;
+    overflow: hidden; /* Prevent content overflow */
   }
-}
+  
+  /* Each section inside the app container */
+  .app .section {
+    padding: 20px;
+    color: #fff;
+    border-radius: 12px; /* Round corners for the sections */
+    margin: 10px; /* Add margin between sections */
+  }
+  
+  /* Styling for NewExpense section */
+  .app .section.new-expense {
+    background-color: #d9c2d1; /* Green color for NewExpense */
+    flex: 1; /* Take up smaller space */
+    min-width: 200px; /* Minimum width for the smaller section */
+  }
+  
+  /* Styling for ListExpenses section */
+  .app .section.list-expenses {
+    background-color: #60819c; /* Blue color for ListExpenses */
+    flex: 3; /* Take up larger space */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      max-width: 100%; /* Ensure full width on small screens */
+    }
+  
+    .app .section {
+      margin: 10px 0; /* Margin between stacked sections */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main h1 {
+      font-size: 1.8rem; /* Smaller font size for very small screens */
+    }
+  
+    .app .section {
+      padding: 15px; /* Less padding on smaller screens */
+    }
+  }
+  
